@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../../styles.css";
 import ForgetEmail from "./ForgetEmail";
 import { Link } from 'react-router-dom';
-
+// import { BiCheckCircleFill } from 'react-icons/bi';
   
 
 
@@ -65,7 +65,7 @@ const handleConfirmPassword = (e) => {
 
   if (authMode === "signin") {
     return (
-      <div className="container-fluid">
+      <div className="container-fluid-login">
         
         <form className="Auth-form-login">
           <div className="Auth-form-content">
@@ -92,10 +92,11 @@ const handleConfirmPassword = (e) => {
               type={password}
               onChange={onPasswordChange}
               value={passwordInput}
-              placeholder="Enter password"
+              placeholder="*******"
               name="password"
               className="form-control"
             />
+            
       <button className="eye-button" onClick={toggle}>
         {password === "password" ? (
           <svg
@@ -128,14 +129,14 @@ const handleConfirmPassword = (e) => {
 
 
             <div className="text-center_Forget">
-            <a href="#" className="link-primary" onClick={changeAuthMode}>Forgot Your Password?</a>
+            <a href="#" className="btn btn-link text-decoration-none" onClick={changeAuthMode}>Forgot Your Password?</a>
             </div>
             <div className="checkbox">
             <input type="checkbox"/>
-            <span className="rem">Rember Password</span>
+            <span className="rem">Remember me</span>
             </div>
             <div className="d-grid gap-2 mt-3 ">
-              <button type="submit" className="submit_login">
+              <button type="submit" className="submit-login">
                 Login
               </button>
             </div>
@@ -147,16 +148,20 @@ const handleConfirmPassword = (e) => {
             </div>
           </div>
         </form>
+        <div className="copyright-text">
+        <small >Copyright @ 2023 99techinologies. All rights reserved</small>
+        </div>
+       
       </div>
     )
   }
 
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid-signup">
       <form className="Auth-form-siginup">
         <div className="Auth-form-content">
-          <h4 className="Auth-form-title_Register">Hi, Welcome to OTO!</h4>
+          <h4 className="Auth-form-title-Register">Hi, Welcome to OTO!</h4>
 
          <div className="form-group text-left">
             <label>First Name</label>
@@ -199,7 +204,7 @@ const handleConfirmPassword = (e) => {
           <div className="form-group mt-3 text-left ">
             <label>Password</label>
         
-             <div className="input-group pass-input-group"> 
+             <div className="input-group"> 
               <input
               
               type={password}
@@ -236,12 +241,12 @@ const handleConfirmPassword = (e) => {
       </button>
         
             </div>
-              <small className="text-muted">Password must be at least 8 Characters and<br></br> must contain at least a Capital Letter and a<br></br> Number and a Special Character.</small>  
+            <p className="text-muted-reset">Password must be at least <span className='label'>8 Characters</span> and must contain at least <br></br>a <span className='label'>Capital Letter</span> and a <span className='label'>Number</span> and a <span className='label'>Special Character.</span></p>  
           </div>
           <div className="form-group mt-3 text-left">
             <label>Confirm Password</label>
        
-             <div className="input-group form-lable"> 
+             <div className="input-group "> 
               <input
               
               type={password}
@@ -251,8 +256,12 @@ const handleConfirmPassword = (e) => {
               name="password"
               className="form-control "
             />
-
-         
+{/* 
+<div className="input-group-append">
+  <span className="input-group-text">
+    <BiCheckCircleFill className="text-success" />
+  </span>
+</div> */}
       <button className="eye-button" onClick={toggle}>
         {password === "password" ? (
           <svg
@@ -300,6 +309,11 @@ const handleConfirmPassword = (e) => {
           </div>
         </div>
       </form>
+      <div className="copyright-text-signup">
+        <small >Copyright @ 2023 99techinologies. All rights reserved</small>
+        </div>
+       
+    
     </div>
   )
 }

@@ -14,8 +14,8 @@ const LoginImage = () => {
               <img src={img1} />
               <h4>
                 <strong>
-                The Operatung System that <br></br>
-                that's mean business
+                The Operating System that <br></br>
+                that's means business
                 </strong>
               </h4>
               <p> 

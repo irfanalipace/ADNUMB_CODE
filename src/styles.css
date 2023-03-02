@@ -11,22 +11,23 @@
 }
 
 .Auth-form-login{
- 
+  margin-left: 30px;
+  margin-top: 12%;
     width: 350px;
     height: 200px;
-    margin-left: 20px; 
-   margin-top: 20%; 
    left: 0;
    top: 0;
 }
 .Auth-form-siginup{
- 
-  width: 60%;
-  height: 100%;
-  margin-left: 20px; 
-  margin-top: 4%; 
+ position: fixed;
+  /* width: 20%;
+  height: 100%; */
+  /* margin-left: 28px;  */
+  margin-left: 11px;
+    margin-top: 12px;
+  /* margin-top: 2%; 
   left: 0;
-  top: 0;
+  top: 0; */
 }
 
 .container1{
@@ -42,8 +43,8 @@ top: 114px;
 
 }
 .checkbox{
-    margin-right: 52%;
-    margin-top: 10%;
+    margin-right: 55%;
+    margin-top: 7%;
 }
 .checkbox2{
     margin-right: 44%;
@@ -65,11 +66,13 @@ top: 114px;
 .under-text{
     margin-right: 10%;
     margin-top: 3px;
-}.text-center_Forget{
-margin-left: 65px;
+}
+.text-center_Forget{
+margin-left: 100px;
 margin-top: 3px;
 }
-.submit_login{
+
+.submit-login{
  
 color: white;    
 display: flex;
@@ -79,7 +82,7 @@ align-items: center;
 height: 38px;
 background: #006401;
 border-radius: 10px;
-margin-left: 20px;
+margin-left: 24px;
 border:none;
 border-radius:10px;
 width: 80%;
@@ -97,7 +100,7 @@ border-radius: 10px;
 /* margin-left: 82px; */
 border:none;
 border-radius:10px;
-width: 52%;
+width: 50%;
 }
 .login-button{
     color: white;    
@@ -108,10 +111,10 @@ width: 52%;
     height: 38px;
     background: #006401;
     border-radius: 10px;
-    margin-left: -24px;
+    margin-left: -20px;
     border:none;
     border-radius:10px;
-    width: 88%;
+    width: 92%;
     
 }
 
@@ -170,9 +173,25 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 }
+   .new-button{
+    color: white;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    background: #006401;
+    border-radius: 10px;
+    margin-left: 0px;
+    border:none;
+    border-radius:10px;
+    width: 21.4%;
+   }
+.resetpass{
+    margin-left:-190px;
+    margin-bottom: 40px;
+    font-size: 30px;
    
-.resetPass{
-    margin-right: 45%;
     /* margin-bottom: 20%; */
 }.newPass{
 float: left;
@@ -197,7 +216,8 @@ margin-right: 30%;
    float: left; */
   }
   #grad-login{
-   width: 100%;
+    position:fixed;
+   width: 48%;
    height: 727px;
    
     margin-left: -12px;
@@ -210,9 +230,10 @@ margin-right: 30%;
   }
   .Auth-form-title{
     margin-right:80px;
+    margin-bottom: 40px;
     
-  }.Auth-form-title_Register{
-    margin-right:90px;
+  }.Auth-form-title-Register{
+    margin-right:75px;
     margin-left: 0px;
   }.gradient-container-top{
  
@@ -222,12 +243,22 @@ margin-right: 30%;
 
   }.Auth-form-title h4{
     margin-right: 300px;
-  }.Auth-form-heading{
-    margin-right: 160px;
+  }
   
-   }.input-group{
+  .Auth-form-heading{
+    margin-right: 160px;
+     /* font-size: 40px;
+    font-weight: bold; */ 
+   }
+   .input-group{
  
-    width: 300px;
+    width: 310px;
+    margin-right: 10px;
+    margin-top: 3px;
+  }
+  .form-group-pass{
+ 
+    width: 322px;
     margin-right: 10px;
  
   }
@@ -235,22 +266,59 @@ margin-right: 30%;
   .form-control{
     width: 80%;
   }
+  
   .form-control-forget-email{
     width: 60%;
+    margin-top: 2px;
   }
+
+
   .form-control-rest{
-    width: 60%;
+    width: 21%;
   }
+
+  
+  .forget-email-lable{
+    width: 58%;
+  }
+
   .text-muted{
         --bs-text-opacity: 1;
         color: var(--bs-secondary-color)!important;
+       height : 2px;
+       color: blue;
   }
+
+  .text-muted-reset{
+    /* --bs-text-opacity: 1;
+    color: var(--bs-secondary-color)!important;
+   height : 2px;
+   color: blue; */
+   font-size: 9.3px;
+   color: #ABAFB1;
+}
+.label{
+  color:#32936F;
+}
   .eye-button{
     /* color: white; */
     margin-right: 38px;
     border: white;
     /* border-right: white; */
-  }.password-lable{
+  }
+  
+  
+  .eye-button-button{
+    /* color: white; */
+    margin-right: 44px;
+    border: white;
+    height: 37px;
+    size: 2px;
+
+    /* border-right: white; */
+  }
+  
+  .password-lable{
     
    
     text-align: left !important;
@@ -265,15 +333,17 @@ margin-right: 30%;
     height: auto;
     width : 100%;
   }.email-lable{
-    width: 80%;
+    width: 78%;
+    margin-bottom: 2px;
   }.background-image1>img{
     height: 100%;
     width: 100%;
    margin-left: -26px;
   }
   .form-content{
-    margin-top: 150px;
    
+    margin-top: 150px;
+    margin-left: 50%;
   }
 .reset-login{
     color: white;    
@@ -287,7 +357,7 @@ margin-right: 30%;
     margin-left: 0px;
     border:none;
     border-radius:10px;
-    width: 60%;
+    width: 48%;
 }
 .text-white>img{
   /* margin-bottom: 23em;
@@ -302,20 +372,21 @@ margin-right: 30%;
 text-align: center!important;
 }
 .background-image-img{
+  position: fixed;
     background-image: url("./image/asset.png");
     /* height: 100%; */
     background-repeat: no-repeat;
     background-position-y: center;
     margin-left: 0px;
-    width: 107%;
+    width: 48%;
     margin-right: 0px;
     margin-left: -12px;
 }
 .small-logo>img{
-width: 220px;
+width: 216px;
 height: 140px;
 vertical-align: middle;
-margin-bottom: 20em;
+margin-bottom: 14em;
 margin-top: 6rem;
 margin-right: 25px;
 flex:none;
@@ -329,81 +400,27 @@ top: 287px;
   margin-left: 4px;
 }
 .Auth-form-reset{
-  /* width: 80%;
-    height: 200px; */
-    margin-left: 90px; 
-   margin-top: 2%; 
+  width: 100%;
+    height: 100%;
+    margin-left: 0px;
+    margin-top: 6%;
+    position: fixed;
 }
 .Auth-form-forget{
   width: 80%;
   height: 200px;
   margin-left: 59px;
-  margin-top: 23%
+  margin-top: 34%
+}
+
+.Auth-form-forget-page{
+  width: 80%;
+  height: 200px;
+  margin-left: 59px;
+  margin-top: 26%
 }
 
 
-/* forget password media query */
-@media only screen and (max-width:740px) {
-  .reset-login {
-    width: 246px !important;
-    /* margin-right: 10px; */
-}
-}
-/* forget password media query */
-@media only screen and (max-width:540px) {
-  .forget-email {
-    width: 95% !important;
-    /* margin-right: 10px; */
-}
-}
-
-/* login and signup media query */
-@media only screen and (max-width:1200px) {
-  .input-group {
-    width: 88.98% !important;
-    margin-right: 10px;
-}
-}
-
-
-
-@media (max-width: 768px) {
-  .container-fluid {
-    max-width: 100%; 
-    padding: 0 15px; 
-  }
-}
-
-@media screen and (min-width:360px) and (max-width:740px) {
-  .input-group{
-    width: 303px;
-    margin-right: 10px;
-}
-}
-
-
-@media only screen and (max-width:425px){
-  .form-control {
-    width: 267px;
-}
-}
-@media only screen and (max-width: 425px){
-  .input-group {
-      width: 303px !important;
-  }
-  }
-.form-control{
-  /* width: 78%; */
-}
-/* .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
-  width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * .5);
-  padding-left: calc(var(--bs-gutter-x) * .5);
-  margin-right: auto;
-  margin-left: auto;
-} */
 
 .password-lable-signup{
     
@@ -419,8 +436,8 @@ top: 287px;
    
   /* text-align: left !important; */
  /* margin-left: 6%; */
-  /* margin-top: 20px; */
-  width: 90%;
+  margin-top: 3px; 
+  width: 340px;
 }
 /* .eye-button-confirm{
   padding-right: 25px;
@@ -429,3 +446,295 @@ margin-right: 30px;
   background-position: right center;
   background-repeat: no-repeat;
 } */
+.copyright-text{
+  margin-top: 50% !important;
+  margin-right: 40%;
+  font-size: 12px;
+}
+
+
+
+/* .copyright-text-signup{
+  margin-top: 2% !important;
+  margin-right: 40%;
+  font-size: 12px;
+} */
+
+
+
+.copyright-text-reset{
+  /* %;
+  margin-left: 10%;
+  font-size: 20px; */
+}
+
+.copyright-text-forget{
+  margin-top: 13%;
+  margin-left: 520px;
+  font-size: 12px;
+}
+/* 
+media querys */
+
+/* .form-content-newpass{
+  
+  margin-top: 150px;
+  margin-left: 50%;
+} */
+
+.reset-form{
+  width: 26%;
+  margin-top: 5px;
+}
+
+.eye-button-tag{
+  margin-left: 236px !important;
+  margin-top: -37px;
+  
+}
+.reset-form-pass{
+  width: 23.3%;
+  margin-top: 5px;
+}
+/*  */
+
+.copyright-text-email{
+  margin-top: 594px;
+  margin-left: 460px;
+  font-size: 10px;
+}
+
+
+
+
+
+@media only screen and (max-width:1200px) {
+  .input-group {
+    width: 96.9% !important;
+    margin-right: 10px;
+}
+}
+
+
+
+
+@media only screen and (max-width: 919px) {
+  .Auth-form-title {
+  
+    margin-right: 92px;
+}
+}
+
+
+@media only screen and (max-width: 896px){
+  .submit-login {
+      width: 76% !important;
+  }
+  }
+
+  @media screen and (min-width:469px) and (max-width:888px){
+    .eye-button-tag {
+      margin-left: 148px !important;
+      margin-top: -36px;
+    }
+  }
+  
+  /* @media screen and (min-width:469px) and (max-width:888px){
+    .Auth-form-heading-title {
+    font-size: 17px;
+    }
+  } */
+
+  @media screen and (min-width:469px) and (max-width:888px){
+    .copyright-text-email {
+      margin-left: 310px !important;
+     
+    }
+  }
+
+
+  @media only screen and (max-width:859px) {
+  
+  
+    .copyright-text{
+      margin-top: 86% !important;
+      margin-right: 1% !important;
+      font-size: 12px !important;
+    }
+  
+  }
+
+ 
+
+  @media only screen and (max-width:740px) {
+  .text-center_Forget {
+    margin-left: 67px;
+    margin-top: 3px;
+}
+}
+
+    @media (max-width: 768px) {
+      .container-fluid {
+        max-width: 100%; 
+        padding: 0 15px; 
+      }
+    }
+
+    @media only screen and (max-width:740px) {
+      .reset-login {
+        width: 246px !important;
+        /* margin-right: 10px; */
+    }
+    }
+    @media only screen and (max-width: 740px){
+      .Auth-form-title {
+      
+        margin-right: 100px;
+    }
+    }
+    @media screen and (min-width:360px) and (max-width:740px) {
+      .input-group{
+        width: 303px;
+        margin-right: 10px;
+    }
+    }
+    @media only screen and (max-width: 667px){
+      .Auth-form-title-Register {
+      
+        margin-right: 90px;
+    }
+    }
+
+    
+  @media only screen and (min-width:625px){
+    .Auth-form-heading {
+      margin-right: 118px;
+      font-size: 14px;
+      font-weight: bold;
+  }
+    }
+
+
+  
+      
+
+  @media only screen and (min-width: 625px){
+    .copyright-text-reset {
+      margin-top: 14%;
+      margin-left: 390px;
+      font-size: 7px;
+  }
+    }
+
+
+
+
+
+/* forget password media query */
+
+
+
+@media only screen and (min-width: 625px){
+  .email-lable {
+      width: 86% !important;
+  }
+  }
+
+ 
+
+/* forget password media query */
+
+@media only screen and (min-width:625px) {
+  .form-control-forget-email {
+    width: 91% !important;
+    /* margin-right: 10px; */
+}
+}
+
+@media only screen and (min-width:625px) {
+  .resetPass {
+   
+     margin-right: 22%; 
+}
+}
+
+@media only screen and (min-width:625px) {
+  .forget-email {
+   
+     width: 60%; 
+}
+}
+
+
+/* @media only screen and (min-width:625px) {
+  .eye-button-tag {
+  margin-top: -37 !important;
+    margin-left: 144px !important;
+    
+}
+} */
+
+
+@media only screen and (max-width:540px) {
+  .forget-email {
+    width: 95% !important;
+    /* margin-right: 10px; */
+}
+}
+
+
+
+
+@media only screen and (max-width:425px){
+  .form-control {
+    width: 267px;
+}
+}
+@media only screen and (max-width: 425px){
+  .input-group {
+      width: 303px !important;
+  }
+  }
+
+ 
+  @media only screen and (max-width:425px) {
+  
+  
+    .copyright-text{
+      margin-top: 148% !important;
+      margin-right: -8% !important;
+    font-size: 12px;
+    
+    }
+  
+  }
+
+
+  @media only screen and (max-width:425px) {
+    .new-button{
+      width: 68.6%;
+    }
+    
+  }
+  
+
+
+  @media only screen and (max-width:468px) {
+    .eye-button-tag {
+      margin-left: 234px !important;
+      margin-top: -36px;
+    }
+    }
+
+
+  @media only screen and (max-width:393px) {
+  
+  
+    .copyright-text{
+        margin-top: 128% !important;
+    margin-right: -17% !important;
+    font-size: 12px;
+    }
+  
+  }
+  

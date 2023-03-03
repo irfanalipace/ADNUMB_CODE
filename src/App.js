@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="App">
    <LoginPage /> 
-
-   {/* <ForgetEmail />  */}
+ 
+    {/* <ForgetEmail />   */}
   {/* <ResetEmail /> */}
 {/* <SiginUp /> */}
     </div>

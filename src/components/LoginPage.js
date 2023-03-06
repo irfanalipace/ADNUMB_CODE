@@ -7,11 +7,11 @@ const LoginPage = () => {
   return (
     <div className="container-fluid">
       <div className="row">
-      <div className="col-sm-6 d-none d-sm-block">  
+      <div className="col-md-6 col-xl-6 d-none d-sm-block ">  
      
           <LoginImage />
         </div>
-        <div className="col-sm-6 group-2">
+        <div className="col-md-6 col-xl-6 col-sm-12">
            
           <LoginForm />
         </div>

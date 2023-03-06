@@ -5,13 +5,12 @@ import "../../styles.css";
 const LoginImage = () => {
 
   return (
-    <div className='container-fluid'>
-       <div className='row'>
-    <div id="grad-login">
+
+    <div id="grad-login1">
        
-        <div className='background-image-img'>
+        <div className='background-image-img1'>
           <div className='text-white text-center small-logo'>
-              <img src={img1} />
+              { <img src={img1} /> }
               <h4>
                 <strong>
                 The Operating System that <br></br>
@@ -27,8 +26,6 @@ const LoginImage = () => {
           </div>
         </div>
         </div>
-       </div>
-       </div>
   )
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 import img from '../../image/Login_img.jpg'
 import "../../styles.css";
 import LoginImage from './LoginImage';
-
+import img1 from '../../image/99-logo.png'
 
 
 const ResetEmail = () => {
@@ -23,41 +23,53 @@ const ResetEmail = () => {
   return (
     <div className="container-fluid">
       <div className="row">  
-      <div className="col-md-6 d-none d-sm-block">   
-      {/* <div className="background-image1">    
-      <img src={img} />
+
+      <div className="col-md-6 col-xl-6 d-none d-sm-block ">   
      
-      </div> */}
-       <LoginImage />
-    </div>
+      <div id="grad-login-reset-mail">
+      <div className='background-image-img1'>
+          <div className='text-white text-center small-logo'>
+              { <img src={img1} /> }
+              <h4>
+                <strong>
+                The Operating System that <br></br>
+                that's means business
+                </strong>
+              </h4>
+              <p> 
+                seamlessly Manage all your Omnichannel <br>
+              </br>
+              commerce, Marketing, Payment and Bussiness 
+              <br></br>Intelligence oprators
+              </p>
+          </div>
+        </div>
+       </div>
+      
+       </div>
    
     
-    <div className="col-md-6">
-    <form className="Auth-form-reset">
-      <div className=" text-left">
-      <h4 className='Auth-form-heading-title'> Make a New Password</h4>
-      </div>
-   
- 
-          <div className="form-group text-left">
-            <label>Email address</label>
-            <div className=" reset-form">
-
+    <div className="col-md-6 col-xl-6 col-sm-12">
+    <form className="Auth-form-login-form">
+          <div className="Auth-form-content1">
+            <h4 className="Auth-form-title">Make a new password</h4>
             
-            <input
-              type="email"
-              className="form-control "
-              placeholder="abc@xyz.com"
-            />
-          </div>
-          </div>
-
+            
+            <div className="form-group text-left">
+              <label>Email address</label>
+              <input
+               
+                className="form-control email-lable"
+                placeholder="abc@xyz.com"
+               
+              />
+            </div>
           
-          <div className="password-lable ">
+                <div className="password-lable">
                 <label>Password</label>
               
-                         <div className=" reset-form-pass">
-         
+             
+            <div className="input-group form-group-pass"> 
               <input
               
               type={password}
@@ -67,11 +79,8 @@ const ResetEmail = () => {
               name="password"
               className="form-control"
             />
-            </div>
-
-
-       <div className='eye-button-tag'>
-      <button className="eye-button-button" onClick={toggle}>
+            
+      <button className="eye-button" onClick={toggle}>
         {password === "password" ? (
           <svg
             width="20"
@@ -96,17 +105,15 @@ const ResetEmail = () => {
           </svg>
         )}
       </button>
-      </div>
         
-             <div>
-              <p className="text-muted-reset">Password must be at least <span className='label'>8 Characters</span> and must contain at least <br></br>a <span className='label'>Capital Letter</span> and a <span className='label'>Number</span> and a <span className='label'>Special Character.</span></p>  
-          </div>
             </div>
-            
-
+            <p className="text-muted-reset" id="text-for-password">Password must be at least <span className='label'>8 Characters</span> and must contain at least <br></br>a <span className='label'>Capital Letter</span> and a <span className='label'>Number</span> and a <span className='label'>Special Character.</span></p>  
+            </div>
             <div className="password-lable">
                 <label>Confirm Password</label>
-                <div className=" reset-form-pass">
+              
+             
+            <div className="input-group form-group-pass"> 
               <input
               
               type={password}
@@ -114,12 +121,10 @@ const ResetEmail = () => {
               value={passwordInput}
               placeholder="*******"
               name="password"
-              className="form-control "
+              className="form-control"
             />
-            </div>
-
-            <div className='eye-button-tag'>
-      <button className=" eye-button-button" onClick={toggle}>
+            
+      <button className="eye-button" onClick={toggle}>
         {password === "password" ? (
           <svg
             width="20"
@@ -145,25 +150,28 @@ const ResetEmail = () => {
         )}
       </button>
         
-           
-      </div>
+            </div>
+            
             </div>
 
-         
-          <div className="d-grid gap-2 mt-3 text-left">
-            <button type="submit" className="new-button">
-           Submit
-            </button>
+            <div className="d-grid gap-2 mt-3 ">
+              <button type="submit" className="submit-login">
+                Submit
+              </button>
+            </div>
+          
           </div>
-          </form>
-        </div>
-        
-        </div >
+        </form>
      
-        <h6 className='copyright-text-email'>Copyright @ 2023 99techinologies. All rights reserved</h6>
-       
-  </div>
+     
+        <h6 className='copyright-text-copy'>Copyright @ 2023 99techinologies. All rights reserved</h6>
 
+     
+      </div>
+        </div>
+       </div>
+ 
+  
   )
 }
 

@@ -74,15 +74,10 @@ const handleConfirmPassword = (e) => {
             <h4 className="Auth-form-title">Hi, Welcome to OTO!</h4>
             
             
-            <div className="form-group text-left">
-              <label>Email address</label>
-              <input
-               
-                className="form-control email-lable"
-                placeholder="abc@xyz.com"
-               
-              />
-            </div>
+            <div className="form-group text-left text-left-email">
+						<label className="form-lable-signup">Email address</label>
+						<input type="email" className="form-control" id="email" placeholder="Enter your email" required />
+					</div>
           
                 <div className="password-lable">
                 <label>Password</label>

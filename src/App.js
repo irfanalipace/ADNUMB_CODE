@@ -10,11 +10,11 @@ import Data from './components/login/Data';
 function App() {
   return (
     <div className="App">
-   {/* <LoginPage />  */}
+   <LoginPage /> 
  
     {/* <ForgetEmail />   */}
   {/* <ResetEmail /> */}
-<Dashboard />
+{/* <Dashboard /> */}
 {/* <Data /> */}
     </div>
   );

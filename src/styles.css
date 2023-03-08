@@ -39,7 +39,7 @@
 .text-left{
     text-align: left !important;
     margin-left: 6%;
-    width: 95%;
+    /* width: 95%; */
     margin-bottom: 5px;
  
 }
@@ -365,15 +365,17 @@ margin-right: 30%;
     margin-right: 10px;
     margin-top: 3px;
   }
-  .form-group-pass{
+  /* .form-group-pass{
  
     width: 322px;
     margin-right: 10px;
  
+  } */
+  .text-left-email{
+width: 84%;
   }
-
   .form-control{
-    width: 80%;
+    width: 83%;
   }
   
   .form-control-forget-email{
@@ -386,10 +388,10 @@ margin-right: 30%;
     width: 21%;
   }
 
-  /* .container-fluid{
- overflow-x: hidden;
+  .email-lable{
+    width: 269%;
 
-  } */
+  }
 
   .forget-email-lable{
     width: 58%;
@@ -935,6 +937,15 @@ margin-left: 39px;
 }
 }
 
+@media only screen and (max-width:1024px) {
+  .text-left-email {
+  width: 81%;
+  }
+  }
+  
+
+
+
 @media only screen and (max-width:1440px) {
 .eye-button-tag {
   margin-left: 252px !important;
@@ -1165,10 +1176,10 @@ margin-left: 39px;
       margin-top: 48px !important;
     }
   }
-  @media screen and (max-width:320px) {
+  @media screen and (max-width:360px) {
     .Auth-form-siginup-page {
-     margin-left: -13px !important;
-      margin-top: 8px !important;
+      margin-left: -16px !important;
+      margin-top: 48px !important;
     }
   }
   
@@ -1405,10 +1416,10 @@ margin-left: 39px;
   }
 
 
-   @media only screen and (max-width: 360px){
+   @media only screen and (max-width: 320px){
 .Auth-form-login {
   
-    margin-left: 23px;
+    margin-left: 2px;
    
 }
 } 
@@ -1434,6 +1445,13 @@ margin-left: 39px;
       
     }
     }
+@media only screen and (max-width: 425px){
+    .text-left-email {
+      width: 76%;
+  }
+}
+
+
     @media only screen and (max-width: 425px){
     .container-fluid{
       overflow-x: hidden !important;

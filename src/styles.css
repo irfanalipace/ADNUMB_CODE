@@ -1,3 +1,37 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* @import './image/Login-img.png'; */
 /* @media (max-width: 576px) {
   .form
@@ -669,7 +703,8 @@ margin-left: 39px;
   width: 200px;
 }
 .menu{
-  margin-left:-36%
+  margin-left:-36%;
+  
 }
 .bi-bag-dash{
   margin-left: -33px;
@@ -684,6 +719,17 @@ margin-left: 39px;
     width: 200px;
   
 }
+
+.dataTables_length{
+  margin-right: 87%;
+    /* margin-top: 14%; */
+    padding-top: 24px;
+}
+.download-data{
+  background-color: #006401;
+}
+
+
 .center{
   width: 30%;
   margin-left: auto;
@@ -730,10 +776,20 @@ margin-left: 39px;
   text-decoration: none;
   
 }
-
-
-
-
+/* 
+/////sidebar css */
+.orders{
+  margin-left: -20px;
+}
+.inventory-menu{
+  margin-left: -6px;
+}
+.conversation{
+  margin-left: 24px;
+}
+.setting{
+  margin-left: -32px;
+}
 
 .gift{
   background-color: #7BBB6C;

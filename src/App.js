@@ -7,15 +7,18 @@ import ResetEmail from './components/login/ResetEmail';
 import Form from './components/login/Form';
 import Dashboard from './components/login/Dashboard';
 import Data from './components/login/Data';
+import { UploadFiles } from './components/login/UploadFiles';
+
 function App() {
   return (
     <div className="App">
-   <LoginPage /> 
+   {/* <LoginPage />  */}
  
     {/* <ForgetEmail />   */}
   {/* <ResetEmail /> */}
-{/* <Dashboard /> */}
+<Dashboard />
 {/* <Data /> */}
+{/* <UploadFiles /> */}
     </div>
   );
 }

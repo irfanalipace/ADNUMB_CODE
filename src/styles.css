@@ -705,22 +705,26 @@ margin-left: 39px;
   width: 200px;
 }
 .menu{
-  margin-left:-36%;
-  
+  /* margin-left:-44%; */
+  /* width: 136%; */
 }
+.menu-text-size{
+  font-size:13px
+}
+
 .bi-bag-dash{
   margin-left: -33px;
 }
  .btn{
   background-color: #006401;
 }
-.headphone{
-  margin-top: 120%;
+/* .headphone{
+  
   
   background-color: #5E6366;
     width: 200px;
   
-}
+} */
 
 .dataTables_length{
   margin-right: 87%;
@@ -743,7 +747,7 @@ margin-left: 39px;
 
 .custom-file-input {
   color: transparent;
-  margin-left: -25px;
+    margin-left: -48px;
 }
 .custom-file-input::-webkit-file-upload-button {
   visibility: hidden;
@@ -780,23 +784,32 @@ margin-left: 39px;
 }
 
 .download-sample{
-  margin-top: 0;
+  
+    margin-top: 32px;
     margin-bottom: -2rem;
     margin-left: -158px;
+
+}
+
+.icondata{
+  margin-left: -40px;
 }
 /* 
 /////sidebar css */
 .orders{
-  margin-left: -20px;
+  margin-right: 40%;
 }
 .inventory-menu{
-  margin-left: -6px;
+  margin-right: 38%;
 }
 .conversation{
-  margin-left: 24px;
+  margin-right: 26%;
+}
+.customer{
+  margin-right: 36%;
 }
 .setting{
-  margin-left: -32px;
+  margin-right: 50%;
 }
 
 .gift{
@@ -819,7 +832,7 @@ margin-left: 39px;
   margin-left: -13px;
 }
 .button-logout{
-  margin-right: -70px;
+  margin-right: -10px;
  color: red;
     margin-top: 18px;
     border: none;
@@ -841,8 +854,10 @@ margin-left: 39px;
 }
 .import-file{
  
-  margin-right: 78%;
-  margin-bottom: 150px;
+  margin-right: 84% !important;
+  margin-bottom: 129px !important;
+  height: 100px;
+  margin-top: 7px !important;
 
 }
 .datatable{
@@ -860,11 +875,14 @@ margin-left: 39px;
   background-color: #7BBB6C;
   border-radius: 1rem;
   margin-left: 9px;
-  width: 233px;
-    height: 184px;
-    border-color: #7BBB6C;
+  border: aliceblue;
+  width: 167px;
+  height: 139px;
+  border-color: #7BBB6C;
 }
-
+.hide-background {
+  background-color: transparent;
+}
 .h6-heading{
   margin-right: 84%;
   margin-bottom: 19px;
@@ -872,15 +890,17 @@ margin-left: 39px;
 
 
 .download{
-  margin-left: 400%;
-  margin-top: -70%;
+  margin-left: 540% !important;
+  margin-top: -60% !important;
 
 }
-
+.navbar-class{
+  flex-grow: none !important;
+}
 
   .sidebar {
     margin-top: 6%;
-    height: 100%;
+    /* height: 100%; */
     /* width:17%;
     position: fixed; */
     z-index: 1;
@@ -889,6 +909,8 @@ margin-left: 39px;
     background-color: white;
     overflow-x: hidden;
     padding-top: 16px;
+    
+ 
   }
   
   /* Style sidebar links */
@@ -898,6 +920,7 @@ margin-left: 39px;
     font-size: 20px;
     color: #818181;
     display: block;
+    width: fit-content;
   }
   
   /* Style links on mouse-over */
@@ -1488,15 +1511,7 @@ margin-left: 39px;
   }
   
 
-  @media only screen and (max-width:425px) {
-  .Auth-form-reset {
-      width: 100%;
-      height: 100%;
-      margin-left: 41px;
-      margin-top: 29%;
-      position: fixed;
-  }
-}
+
 
   @media only screen and (max-width:468px) {
     .eye-button-tag {
@@ -1504,19 +1519,45 @@ margin-left: 39px;
       margin-top: -36px;
     }
     }
+    @media only screen and (max-width:425px) {
+      .Auth-form-reset {
+          width: 100%;
+          height: 100%;
+          margin-left: 41px;
+          margin-top: 29%;
+          position: fixed;
+      }
+    }
+    @media only screen and (max-width:425px) {
+      .menu{
+      margin-left: 24% !important;
+      }
+    
+    }
+    @media only screen and (max-width:425px) {
+      .gift-button{
+        margin-left: 9% ;
+        margin-top: 9px;
+      }
+    
+    }
+
+    @media only screen and (max-width:407px) {
+      .gift-button{
+      margin-top: 13px !important;
+      }
+    
+    }
 
 
-  /* @media only screen and (max-width:393px) {
-  
-  
-    .copyright-text{
-        margin-top: 128% !important;
-    margin-right: -17% !important;
-    font-size: 12px;
+
+   @media only screen and (max-width:400px) {
+    .menu{
+    margin-left: 19% !important;
     }
   
   }
-   */
+  
    @media only screen and (min-width:375px) and (max-width:425px) {
    
 .Auth-form-login {

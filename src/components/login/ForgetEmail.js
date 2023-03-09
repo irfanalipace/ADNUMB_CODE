@@ -34,33 +34,26 @@ const ForgetEmail = () => {
    
     
     <div className="col-md-6 col-xl-6 col-sm-12">
-    <form className="Auth-form-login-form">
+    <form className="Auth-form-login">
           <div className="Auth-form-content1">
-            <h4 className="Auth-form-title-password">Reset your Password</h4>
+            <h4 className="Auth-form-title">Reset your Password</h4>
             
             
-            <div className="form-group text-left">
-              <label>Enter your email address</label>
-              <input
-               
-                className="form-control email-lable"
-                placeholder="abc@xyz.com"
-               
-              />
-            </div>
+            <div className="form-group text-left text-reset-email">
+						<label className="form-lable-signup">Enter email address</label>
+						<input type="email" className="form-control" id="email" placeholder="abc@xyz.com" required />
+					</div>
+      
+            
           
-              
-          
-
             <div className="d-grid gap-2 mt-3 ">
               <button type="submit" className="submit-login">
-              Reset
+               Reset
               </button>
             </div>
-          
+         
           </div>
         </form>
-     
      
         <h6 className='copyright-text-copyright'>Copyright @ 2023 99techinologies. All rights reserved</h6>
 

@@ -50,22 +50,17 @@ const ResetEmail = () => {
    
     
     <div className="col-md-6 col-xl-6 col-sm-12">
-    <form className="Auth-form-login-form">
+    <form className="Auth-form-login">
           <div className="Auth-form-content1">
-            <h4 className="Auth-form-title">Make a new password</h4>
+            <h4 className="Auth-form-title">Make a new Password</h4>
             
             
-            <div className="form-group text-left">
-              <label>Email address</label>
-              <input
-               
-                className="form-control email-lable"
-                placeholder="abc@xyz.com"
-               
-              />
-            </div>
+            <div className="form-group text-left text-left-email">
+						<label className="form-lable-signup">Email address</label>
+						<input type="email" className="form-control" id="email" placeholder="Enter your email" required />
+					</div>
           
-                <div className="password-lable">
+                <div className="password-lable text-left">
                 <label>Password</label>
               
              
@@ -109,7 +104,7 @@ const ResetEmail = () => {
             </div>
             <p className="text-muted-reset" id="text-for-password">Password must be at least <span className='label'>8 Characters</span> and must contain at least <br></br>a <span className='label'>Capital Letter</span> and a <span className='label'>Number</span> and a <span className='label'>Special Character.</span></p>  
             </div>
-            <div className="password-lable">
+            <div className="password-lable text-left">
                 <label>Confirm Password</label>
               
              
@@ -151,15 +146,16 @@ const ResetEmail = () => {
       </button>
         
             </div>
+           
+            </div>
             
-            </div>
-
-            <div className="d-grid gap-2 mt-3 ">
-              <button type="submit" className="submit-login">
-                Submit
-              </button>
-            </div>
           
+            <div className="d-grid gap-2 mt-3 text-left-form">
+           <button type="submit" className="login-button">
+           Submit
+            </button>
+            </div>
+         
           </div>
         </form>
      

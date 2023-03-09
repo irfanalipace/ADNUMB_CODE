@@ -1,5 +1,8 @@
 
+/*old css data use 
 
+
+old data end*/
 
 
 
@@ -52,7 +55,10 @@
 
 }
 
-
+.eye-button-tag1 {
+  margin-left: 301px !important;
+  margin-top: -37px;
+}
 .text-left-form-data{
   text-align: left !important;
   margin-left: 6%;
@@ -74,6 +80,14 @@
    left: 0;
    top: 0;
 }
+.reset-form{
+  margin-left: 30px;
+  margin-top: 23%;
+    width: 350px;
+    height: 200px;
+   left: 0;
+   top: 0;
+}
 
 .Auth-form-login-form{
   /* overflow-x: hidden; */
@@ -84,9 +98,8 @@
    left: 0;
    top: 0;
 }
-
 .Auth-form-siginup-page{
-  /* position: fixed; */
+  
   margin-left: 8px;
     margin-top: 40px;
      width: 513px
@@ -166,6 +179,24 @@ border-radius:10px;
 width: 80%;
    
 }
+
+.submit-reset{
+ 
+  color: white;    
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  background: #006401;
+  border-radius: 10px;
+  margin-left: 24px;
+  border:none;
+  border-radius:10px;
+  width: 80%;
+     
+  }
+
 .forget-email{
   color: white;    
 display: flex;
@@ -192,7 +223,7 @@ width: 50%;
     margin-left: 0px;
     border:none;
     border-radius:10px;
-    width: 80%;
+    width: 333px;
     
 }
 
@@ -331,6 +362,12 @@ margin-right: 30%;
     font-size: 28px;
     
   }
+  .reset-title{
+    margin-right:24px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    
+  }
 
   .Auth-form-title-password{
     margin-right:24px;
@@ -353,7 +390,10 @@ margin-right: 30%;
   }.Auth-form-title h4{
     margin-right: 300px;
   }
-  
+
+.reset-title h4{
+  margin-right: 300px;
+}
   .Auth-form-heading{
     margin-right: 160px;
      /* font-size: 40px;
@@ -374,6 +414,9 @@ margin-right: 30%;
   .text-left-email{
 width: 84%;
   }
+  .text-reset-email{
+    width: 81%;
+      }
   .form-control{
     width: 83%;
   }
@@ -441,13 +484,22 @@ margin-bottom: -12px;
     /* border-right: white; */
   }
   
-  .password-lable{
+  .password-reset{
     
    
     text-align: left !important;
     margin-left: 6%;
     margin-top: 20px;
   }
+  .password-reset{
+    
+   
+    text-align: left !important;
+    margin-left: 6%;
+    margin-top: 20px;
+  }
+
+
   .background-image-login>img{
  margin-left: -12px;
  width: 127%;
@@ -594,13 +646,12 @@ margin-right: 30px;
 }
 
 
-
 .copyright-text-signup1{
   /* margin-bottom: 100% !important; */
-  /* position: fixed; */
-  margin-right:45%;
+  position: fixed;
+  margin-left: 3%;
   font-size: 12px;
-  margin-top: 30px;
+  margin-top: 628px;
 }
 
 
@@ -625,16 +676,15 @@ media querys */
   margin-left: 50%;
 } */
 
-.reset-form{
-  width: 28%;
-  margin-top: 5px;
+.Auth-form-login{
+overflow-x: clip;
 }
 
-.eye-button-tag1{
+/* .eye-button-tag1{
   margin-left: 233px !important;
   margin-top: -37px;
   
-}
+} */
 .reset-form-pass{
   width: 24%;
   margin-top: 5px;
@@ -935,11 +985,12 @@ margin-left: 39px;
   }
   
   /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  }
-
+ 
+  @media only screen and (max-width:1024px) {
+    .text-reset-email {
+    width: 81% !important;
+    }
+    }
 
 @media only screen and (min-width:1400px) and (max-width:1900px){
   .copyright-text {
@@ -965,7 +1016,13 @@ margin-left: 39px;
   width: 81%;
   }
   }
-  
+ 
+  @media only screen and (max-width:1024px) {
+    .text-reset-email {
+    width: 77% !important;
+    }
+    }
+    
 
 
 
@@ -1148,6 +1205,12 @@ margin-left: 39px;
     margin-right: 92px;
 }
 }
+@media only screen and (max-width: 919px) {
+  .reset-title {
+  
+    margin-right: 92px;
+}
+}
 
 
 @media only screen and (max-width: 896px){
@@ -1155,6 +1218,11 @@ margin-left: 39px;
       width: 76% !important;
   }
   }
+  @media only screen and (max-width: 896px){
+    .submit-reset {
+        width: 76% !important;
+    }
+    }
   @media only screen and (min-width:800px) and (max-width:1024px) {
     .copyright-text-signup {
       /* margin-bottom: 100% !important; */
@@ -1175,8 +1243,16 @@ margin-left: 39px;
       margin-left: 148px !important;
       margin-top: -36px;
     }
+    .headphone{
+      margin-top: 0% !important;
+    }
   }
 
+  @media screen and (max-width:461px){
+    .headphone{
+      margin-top: 0% !important;
+    }
+  }
 
   @media screen and (max-width:425px) {
   .Auth-form-title {
@@ -1185,28 +1261,44 @@ margin-left: 39px;
     margin-right: 53px;
 }
   }
-
+  @media screen and (max-width:425px) {
+    .reset-title {
+      margin-right: 100px;
+      font-size: 25px;
+      margin-right: 53px;
+  }
+    }
   @media screen and (max-width:425px) {
     .Auth-form-title-password {
      font-size: 28px;
-
-  }
     }
-
-  @media screen and (max-width:414px) {
-    .Auth-form-siginup-page {
-     margin-left: 15px !important;
-      margin-top: 48px !important;
+    .headphone{
+      margin-top: 0% !important;
     }
   }
-  @media screen and (max-width:360px) {
+
+  @media screen and (max-width:400px)  {
     .Auth-form-siginup-page {
-      margin-left: -16px !important;
-      margin-top: 48px !important;
+     margin-left: -21px !important;
+      margin-top: 52px !important;
+    }
+  }
+  @media screen and (max-width:320px) {
+    .Auth-form-siginup-page {
+      width: 148%;
+      margin-left: -21px !important;
+      margin-top: 52px !important;
+    }
+    .h5{
+      margin-left: 23px;
     }
   }
   
-  
+  @media screen and (max-width:400px)  {
+    .login-button {
+    width: 98% !important;
+    }
+  }
   /* @media screen and (min-width:469px) and (max-width:888px){
     .Auth-form-heading-title {
     font-size: 17px;
@@ -1239,8 +1331,7 @@ margin-left: 39px;
     margin-left: 67px;
     margin-top: 3px;
 }
-}
-
+  }
 
 
     @media only screen and (max-width:740px) {
@@ -1309,6 +1400,13 @@ margin-left: 39px;
 
 
 
+@media only screen and (max-width:468px) {
+  .eye-button-tag {
+    margin-left: 234px !important;
+    margin-top: -36px;
+  }
+  }
+
 
 
 @media only screen and (min-width: 625px){
@@ -1318,6 +1416,11 @@ margin-left: 39px;
   }
 
  
+@media only screen and (min-width: 625px){
+  .Auth-form-title {
+     font-size: 23px;
+  }
+  }
 
 /* forget password media query */
 
@@ -1367,6 +1470,19 @@ margin-left: 39px;
    
   }
   }
+
+  @media screen and (min-width:430px) and (max-width: 460px) {
+    .Auth-form-login-form{
+    margin-left:50px;
+    }
+    }
+    @media screen and (min-width:430px) and (max-width: 460px) {
+      .reset-form{
+      margin-left:50px;
+      }
+      }
+  
+
 @media only screen and (max-width:425px){
   .form-control {
     width: 267px;
@@ -1386,7 +1502,12 @@ margin-left: 39px;
     height: 40%;
 }
 }
-
+@media only screen and (max-width:425px){
+  .reset-form {
+    overflow-x: hidden;
+    height: 40%;
+}
+}
 @media only screen and (max-width:425px) {
   .background-img-data{
  
@@ -1401,6 +1522,13 @@ margin-left: 39px;
     .copyright-text {
       display: none;
     }
+  }
+  @media only screen and (max-width:542px) {
+    .gift-button{
+      margin-left: 0% !important;
+      margin-top: 9px  !important;
+    }
+  
   }
   @media screen and (max-width: 425px) {
     .copyright-text-forget {
@@ -1426,11 +1554,7 @@ margin-left: 39px;
       }
       }
 
-      @media screen and (min-width:430px) and (max-width: 460px) {
-        .Auth-form-login-form{
-        margin-left:50px;
-        }
-        }
+    
   
 @media only screen and (max-width: 425px){
   .input-group {
@@ -1443,9 +1567,19 @@ margin-left: 39px;
 .Auth-form-login {
   
     margin-left: 2px;
-   
+    
+      overflow-x: clip;
+      
+      
 }
 } 
+@media only screen and (max-width: 320px){
+  .reset-form {
+    
+      margin-left: 2px;
+     
+  }
+  } 
  
   /* @media only screen and (max-width:425px) {
   
@@ -1473,7 +1607,15 @@ margin-left: 39px;
       width: 76%;
   }
 }
-
+@media only screen and (max-width: 425px){
+  .text-reset-email {
+    width: 76%;
+}
+}
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
 
     @media only screen and (max-width: 425px){
     .container-fluid{
@@ -1509,16 +1651,17 @@ margin-left: 39px;
     }
     
   }
+  @media only screen and (max-width:360px) {
+    .new-button{
+      height: 231px;
+    }
+    
+  }
   
 
 
 
-  @media only screen and (max-width:468px) {
-    .eye-button-tag {
-      margin-left: 234px !important;
-      margin-top: -36px;
-    }
-    }
+ 
     @media only screen and (max-width:425px) {
       .Auth-form-reset {
           width: 100%;
@@ -1536,12 +1679,12 @@ margin-left: 39px;
     }
     @media only screen and (max-width:425px) {
       .gift-button{
-        margin-left: 9% ;
-        margin-top: 9px;
+        margin-left: 12% !important ;
+        margin-top: 9px !important;
       }
     
     }
-
+  
     @media only screen and (max-width:407px) {
       .gift-button{
       margin-top: 13px !important;
@@ -1570,6 +1713,18 @@ margin-left: 39px;
       top: 0;
   }
     }
+    @media only screen and (min-width:375px) and (max-width:425px) {
+   
+      .reset-form {
+          /* position: fixed; */
+            margin-left: 25px;
+            margin-top: 28%;
+            width: 350px;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+          }
     @media only screen and (max-width:375px) {
       .new-button{
         width: 75.2%;

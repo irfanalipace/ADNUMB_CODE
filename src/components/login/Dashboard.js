@@ -166,13 +166,15 @@ const [selectedFile, setSelectedFile] = useState(null);
     {selectedFile && <p>Selected file: {selectedFile.name}</p>}
     <div className='center' style={{ marginLeft: "44px" }}>
       <input type="file" onChange={handleFileSelect} name="file" className='custom-file-input' />
-    </div>
-    {selectedFile && (
-    <button className="w3-btn w3xlarge hide-background" onClick={selectedFile}>
+      {selectedFile && (
+    <button className=" btn btn-success hide-background" onClick={selectedFile}>
       Reset
     </button>
   )}
+  </div>
   </button>
+    
+  
   
 
               <div className='download'>

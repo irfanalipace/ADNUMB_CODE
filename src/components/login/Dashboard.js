@@ -162,12 +162,18 @@ const [selectedFile, setSelectedFile] = useState(null);
     
               <div className='inventory-heading' style={{ paddingTop: '8px', paddingBottom: '8px' }}>Upload Inventory file</div>
               <button className={`w3-btn w3xlarge ${selectedFile ? 'hide-background' : ''}`}>
-        <img style={{ marginLeft: "-17px" }} src={img1} alt='' />
-        {selectedFile && <p>Selected file: {selectedFile.name}</p>}
-        <div className='center' style={{ marginLeft: "44px" }}>
-          <input type="file" onChange={handleFileSelect} name="file" className='custom-file-input' />
-        </div>
-      </button>
+    <img style={{ marginLeft: "-17px" }} src={img1} alt='' />
+    {selectedFile && <p>Selected file: {selectedFile.name}</p>}
+    <div className='center' style={{ marginLeft: "44px" }}>
+      <input type="file" onChange={handleFileSelect} name="file" className='custom-file-input' />
+    </div>
+    {selectedFile && (
+    <button className="w3-btn w3xlarge hide-background" onClick={selectedFile}>
+      Reset
+    </button>
+  )}
+  </button>
+  
 
               <div className='download'>
                 <p className='download-sample'>Download Sample  </p> <button className='btn  btn-success'>

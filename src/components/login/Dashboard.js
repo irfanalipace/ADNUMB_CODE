@@ -15,15 +15,22 @@ import img10 from '../../image/icon/Notification.png';
 import '../../styles.css'
 
 const Dashboard = () => {
-const [selectedFile, setSelectedFile] = useState(null);
+
   // const dataSet = [
   //   ["Tiger Nixon", "System Architect", "Edinburgh"],
   //   ["Garrett Winters", "Accountant", "Tokyo"],
   //   ["Ashton Cox", "Junior Technical Author", "San Francisco"]
   // ]
-  const handleFileSelect = (e) => {
-    setSelectedFile(e.target.files[0]);
-  }
+
+  const [selectedFile, setSelectedFile] = useState(null);
+
+  const handleFileSelect = (event) => {
+    setSelectedFile(event.target.files[0]);
+  };
+
+  const handleReset = () => {
+    setSelectedFile(null);
+  };
 
 
   return (
@@ -160,19 +167,22 @@ const [selectedFile, setSelectedFile] = useState(null);
 
             <div className=' import-file'>
     
-              <div className='inventory-heading' style={{ paddingTop: '8px', paddingBottom: '8px' }}>Upload Inventory file</div>
-              <button className={`w3-btn w3xlarge ${selectedFile ? 'hide-background' : ''}`}>
-    <img style={{ marginLeft: "-17px" }} src={img1} alt='' />
-    {selectedFile && <p>Selected file: {selectedFile.name}</p>}
-    <div className='center' style={{ marginLeft: "44px" }}>
-      <input type="file" onChange={handleFileSelect} name="file" className='custom-file-input' />
-    </div>
-    {selectedFile && (
-    <button className="w3-btn w3xlarge hide-background" onClick={selectedFile}>
-      Reset
-    </button>
-  )}
-  </button>
+            <div className='inventory-heading' style={{ paddingTop: '8px', paddingBottom: '8px' }}>
+        Upload Inventory file
+      </div>
+      <button className={`w3-btn w3xlarge ${selectedFile ? 'hide-background' : ''}`}>
+        <img style={{ marginLeft: "-17px" }} src={img1} alt='' />
+        {selectedFile && <p style={{marginLeft:'34px'}}>File Name: {selectedFile.name}</p>}
+        <div className='center' style={{ marginLeft: "44px" }}>
+          <input type="file" onChange={handleFileSelect} name="file" className='custom-file-input' />
+        </div>
+        {selectedFile && (
+          <button className="btn btn-success hide-background" style={{ marginTop: '-187px',marginLeft: '189px'}} onClick={handleReset}>
+            Upload Now
+          </button>
+        )}
+      </button>
+ 
   
 
               <div className='download'>
@@ -198,6 +208,7 @@ const [selectedFile, setSelectedFile] = useState(null);
             <div className='datatable'>
               <Data />
             </div>
+            
           </div>
 
 

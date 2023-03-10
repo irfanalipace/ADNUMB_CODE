@@ -8,6 +8,7 @@ import Form from './components/login/Form';
 import Dashboard from './components/login/Dashboard';
 import Data from './components/login/Data';
 import { UploadFiles } from './components/login/UploadFiles';
+import Dumy from './components/login/Dumy';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
 <Dashboard />
 {/* <Data /> */}
 {/* <UploadFiles /> */}
+
     </div>
   );
 }

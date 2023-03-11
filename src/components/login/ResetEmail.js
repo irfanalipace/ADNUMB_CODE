@@ -151,7 +151,7 @@ const ResetEmail = () => {
             
           
             <div className="d-grid gap-2 mt-3 text-left-form">
-           <button type="submit" className="login-button">
+           <button type="submit" className="reset-button">
            Submit
             </button>
             </div>

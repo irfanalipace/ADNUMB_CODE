@@ -8,17 +8,19 @@ import Form from './components/login/Form';
 import Dashboard from './components/login/Dashboard';
 import Data from './components/login/Data';
 import { UploadFiles } from './components/login/UploadFiles';
+import Login from './components/All-form/Login';
 
 function App() {
   return (
     <div className="App">
-   {/* <LoginPage />  */}
+   <LoginPage /> 
  
     {/* <ForgetEmail />   */}
   {/* <ResetEmail /> */}
-<Dashboard />
+{/* <Dashboard /> */}
 {/* <Data /> */}
 {/* <UploadFiles /> */}
+
     </div>
   );
 }

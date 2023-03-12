@@ -102,7 +102,7 @@ old data end*/
   
   margin-left: 8px;
     margin-top: 40px;
-     width: 513px
+     width: 398px
     
 }
 .container1{
@@ -136,7 +136,7 @@ top: 114px;
 
 
 .checkbox-data{
-  margin-right: 56%;
+  margin-right: 47%;
   margin-top: 3%;
 }
 
@@ -151,7 +151,7 @@ top: 114px;
 }
 
 .text-center_bottom{
-    margin-left: -35%;
+    margin-left: -21%;
 }
 .under-text{
     margin-right: 10%;
@@ -223,7 +223,7 @@ width: 50%;
     margin-left: 0px;
     border:none;
     border-radius:10px;
-    width: 333px;
+    width: 266px;
     
 }
 .reset-button{
@@ -461,8 +461,8 @@ width: 84%;
        color: blue;
   }
 .h5{
-  margin-right: 50%;
-  margin-bottom: 6%;
+  margin-right: 40% !important;
+  margin-bottom: 6% !important;
 }
   .text-muted-reset{
     /* --bs-text-opacity: 1;
@@ -473,6 +473,15 @@ width: 84%;
    color: #ABAFB1;
    margin-top: 0px;
 }
+
+
+.text-muted-reset{
+  font-size: 8.3px !important;
+}
+
+
+
+
 .text-for-password{
 margin-bottom: -12px;
 }
@@ -486,7 +495,12 @@ margin-bottom: -12px;
     border: white;
     /* border-right: white; */
   }
-  
+  .eye-button-sigin{
+    /* color: white; */
+    margin-right: 38px;
+    border: white;
+    /* border-right: white; */
+  }
   
   .eye-button-button{
     /* color: white; */
@@ -662,10 +676,11 @@ margin-right: 30px;
 
 .copyright-text-signup1{
   /* margin-bottom: 100% !important; */
-  position: fixed;
-  margin-left: 3%;
-  font-size: 12px;
-  margin-top: 628px;
+  /* position: fixed; */
+
+  margin-left: -48%;
+ 
+  margin-top: 50px;
 }
 
 
@@ -808,7 +823,9 @@ margin-left: 39px;
   
   border: aliceblue;
 }
-
+.link-primary{
+  text-decoration: none;
+}
 .custom-file-input {
   color: transparent;
     margin-left: -48px;
@@ -1076,7 +1093,7 @@ margin-left: 39px;
 
 @media only screen and (min-width:1400px) and (max-width:1440px){
   .copyright-text-signup1 {
-    margin-right: 47%;
+    margin-right: 10%;
 }
 }
 @media only screen and (max-width:1440px) {
@@ -1094,6 +1111,11 @@ margin-left: 39px;
    
   }
 }
+@media only screen and (max-width: 1440px){
+  .eye-button-sigin {
+margin-right: 0px !important;
+}
+}
 @media only screen and (max-width: 1024px){
   .copyright-text-copyright {
     margin-top: 270px;
@@ -1101,6 +1123,12 @@ margin-left: 39px;
     font-size: 10px;
 }
   }
+  @media only screen and (max-width: 1024px){
+    .eye-button-sigin {
+  margin-right: -3px !important;
+}
+  }
+  
 
   @media only screen and (max-width: 1024px){
     .copyright-text-copy {
@@ -1109,7 +1137,7 @@ margin-left: 39px;
       font-size: 10px;
   }
     }
-
+  
     @media only screen and (max-width: 1024px){
       .reset-button {
        width: 125% ;
@@ -1122,7 +1150,7 @@ margin-left: 39px;
         }
   @media only screen and (min-width:800px) and (max-width:1024px){
     .copyright-text-signup1 {
-      margin-right: 29%;
+      margin-right: -10% !important;
   }
   }
 @media only screen and (max-width:1016px){
@@ -1173,6 +1201,8 @@ margin-left: 39px;
        
       }
       }
+
+     
 /* @media only screen and (max-width:1440px) {
   .background-image-img{
     position: fixed;
@@ -1203,20 +1233,21 @@ margin-left: 39px;
   margin-bottom: 19rem;
   }
   } */
+  @media only screen and (max-width:1200px) {
+    .input-group {
+      width: 96.9% !important;
+      margin-right: 10px;
+  }
+  }
+  
   @media only screen and (max-width:1024px) {
   .copyright-text {
   margin-top: 81% !important;
     margin-right: 21%;
 }
   }
+ 
 
-
-@media only screen and (max-width:1200px) {
-  .input-group {
-    width: 96.9% !important;
-    margin-right: 10px;
-}
-}
 
 
 
@@ -1252,7 +1283,11 @@ margin-left: 39px;
      
     }
   }
-
+  @media only screen and (min-width:500px) and (max-width:768px){
+    .copyright-text-signup1 {
+      margin-right: -44% !important;
+  }
+  }
   @media only screen and (min-width:700px) and (max-width:769px) {
     .copyright-text-signup {
       /* margin-bottom: 100% !important; */
@@ -1496,6 +1531,24 @@ margin-left: 39px;
       margin-right: 53px;
   }
     }
+
+    @media screen and (max-width:425px) {
+      .text-left-form {
+        width: 77% !important;
+        margin-left: 42px;
+    }.h5{
+      font-size: 20px;
+    margin-left: 38px;
+    }
+      }
+      @media only screen and (max-width:425px) {
+        .login-button {
+          width: 101%;
+         
+        }.checkbox-data{
+              margin-right: 37% !important;
+        }
+        }
   @media screen and (max-width:425px) {
     .Auth-form-title-password {
      font-size: 28px;
@@ -1505,6 +1558,16 @@ margin-left: 39px;
     }
   }
 
+  @media screen and (max-width:425px) {
+    .Auth-form-title-password {
+     font-size: 28px;
+    }.password-siginup-fileds{
+      width: 300px;
+    }
+  
+  }
+
+
   @media screen and (max-width:400px)  {
     .Auth-form-siginup-page {
      margin-left: -21px !important;
@@ -1513,9 +1576,10 @@ margin-left: 39px;
   }
   @media screen and (max-width:320px) {
     .Auth-form-siginup-page {
-      width: 148%;
-      margin-left: -21px !important;
+      width: 136%;
+      margin-left: -51px !important;
       margin-top: 52px !important;
+  
     }
     .h5{
       margin-left: 23px;
@@ -1757,7 +1821,9 @@ margin-left: 39px;
       .new-button{
         width: 75.2%;
       }
-      
+      .text-muted-reset{
+        font-size: 8.3px !important;
+      }
     }
     @media only screen and (max-width:375px) {
       .Auth-form-reset{

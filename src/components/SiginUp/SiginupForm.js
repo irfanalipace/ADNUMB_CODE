@@ -2,41 +2,48 @@
 import React, { useState } from "react";
 import "../../styles.css";
 
-import { Link,useNavigate } from 'react-router-dom';
+import { Link,redirect,useNavigate } from 'react-router-dom';
 import img1 from '../../image/99-logo.png'
-
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const SiginUp = () => {
   
   const [firstname, setFirstName] = useState("");
   const [lastname, setLastName] = useState("");
   const [email, setEmail] = useState("");
-  const [passwordfileds, setPasswordFileds]= useState("");
-  const navigate = useNavigate();
-  const [password, setPasswordValue] = React.useState("password");
-  const [passwordInput, setPasswordInput] = React.useState("");
+  const [password2, setPassword2] = useState('');
+  const [showPassword2, setShowPassword2] = useState(false);
+ 
   const handleSubmit = (e) => {
       e.preventDefault();
       // console.log({ email, username, tel, password });
       setEmail("");
       setFirstName("");
       setLastName("");
-      setPasswordFileds("");
-  };
-  const gotoLoginPage = () => navigate("/LoginPage");
-  
     
-    const onPasswordChange = (e) => {
-      setPasswordInput(e.target.value);
-    };
-    const toggle = () => {
-      if (password === "password") {
-        setPasswordValue("text");
-        return;
-      }
-      setPasswordValue("password");
-    };
+  };
+ 
+  
 
+    const [password, setPassword] = useState('');
+const [showPassword, setShowPassword] = useState(false);
+
+const handlePasswordChange = (e) => {
+  setPassword(e.target.value);
+};
+
+const handleToggleVisibility = () => {
+  setShowPassword((prevState) => !prevState);
+};
+
+
+const handlePasswordChange2 = (e) => {
+  setPassword2(e.target.value);
+};
+
+const handleToggleVisibility2 = () => {
+  setShowPassword2((prevState) => !prevState);
+};
   return (
     <div>
      
@@ -56,72 +63,40 @@ const SiginUp = () => {
             <label className="form-lable-signup">Email address</label>
             <input type="email" className="form-control" id="email" placeholder="Enter your email" value={email} onChange={(e)=>setEmail(e.target.value)} required />
         </div>
+       
+       
+       
         <div className="form-group text-left-form">
-            <label className="form-lable-signup">Password</label>
-            <input type="password" className="form-control" id="password" value={passwordfileds} onChange={(e)=>setPasswordFileds(e.target.value)} placeholder="Enter your password" required />
-<div className='eye-button-tag1'>
-<button className=" eye-button-button" onClick={toggle}>
-{password === "password" ? (
-<svg
-width="20"
-height="17"
-fill="currentColor"
-className="bi bi-eye-slash-fill"
-viewBox="0 0 16 16"
->
-<path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z" />
-<path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12-.708.708z" />
-</svg>
-) : (
-<svg
-width="20"
-height="17"
-fill="currentColor"
-className="bi bi-eye-fill"
-viewBox="0 0 16 16"
->
-<path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
-<path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
-</svg>
-)}
-</button>
-
-
+        <label> Password</label>
+               <div className='input-group ' id='password-siginup-fileds' >
+        <input
+          className='form-control'
+          type={showPassword ? 'text' : 'password'}
+          id="password"
+          value={password}
+          onChange={handlePasswordChange}
+        />
+        <button className="eye-button-sigin" onClick={handleToggleVisibility} style={{marginRight:"-2px"}}>
+          {showPassword ? <FaEyeSlash /> : <FaEye />}
+        </button>
+      </div>
+      <p className="text-muted-reset" id="text-for-password">Password must be at least <span className='label'>8 Characters</span> and must contain at least a <span className='label'>Capital Letter</span> and a <span className='label'>Number</span> and a <span className='label'>Special Character.</span></p>  
 </div>
-<p className="text-muted-reset" id="text-for-password">Password must be at least <span className='label'>8 Characters</span> and must contain at least <br></br>a <span className='label'>Capital Letter</span> and a <span className='label'>Number</span> and a <span className='label'>Special Character.</span></p>  
-</div>
-        <div className="form-group text-left-form">
-            <label className="form-lable-signup">Confirm Password</label>
-            <input type="password" className="form-control" id="confirm_password" placeholder="Confirm your password" required />
-<div className='eye-button-tag1'>
-<button className=" eye-button-button" onClick={toggle}>
-{password === "password" ? (
-<svg
-width="20"
-height="17"
-fill="currentColor"
-className="bi bi-eye-slash-fill"
-viewBox="0 0 16 16"
->
-<path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z" />
-<path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12-.708.708z" />
-</svg>
-) : (
-<svg
-width="20"
-height="17"
-fill="currentColor"
-className="bi bi-eye-fill"
-viewBox="0 0 16 16"
->
-<path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
-<path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
-</svg>
-)}
-</button>
-
-
-</div>
+<div className="form-group text-left-form">
+        <label>Confirm Password</label>
+               <div className='input-group ' >
+        <input
+          className='form-control'
+          type={showPassword2 ? 'text' : 'password'}
+          id="password"
+          value={password2}
+          onChange={handlePasswordChange2}
+        />
+        <button className="eye-button-sigin" onClick={handleToggleVisibility2} style={{marginRight:"-2px"}}>
+          {showPassword2 ? <FaEyeSlash /> : <FaEye />}
+        </button>
+      </div>
+    
 </div>
 <div className="checkbox-data">
 <input type="checkbox"/>
@@ -135,14 +110,14 @@ viewBox="0 0 16 16"
 
 <div className="text-center_bottom">
 Already have an account?
-<span className="link-primary " onClick={gotoLoginPage}>
-<Link to='/LoginPage'>Login</Link>
+<span className="link-primary " >
+<Link to='/'>Login</Link>
 </span>
 </div>
     </form>
 
 <div className="copyright-text-signup1">
-<small >Copyright @ 2023 99tec`hinologies. All rights reserved</small>
+<small style={{fontSize:"10px"}}>Copyright @ 2023 99tec`hinologies. All rights reserved</small>
 </div>
 </div>
   

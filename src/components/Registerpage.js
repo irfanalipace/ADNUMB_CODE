@@ -8,6 +8,7 @@ import SiginupForm from './SiginUp/SiginupForm'
 export const RegisterPage = () => {
   const navigate = useNavigate();
   const gotoSignUpPage = () => navigate("/register");
+  
   return (
     <div className="container-fluid">
     <div className="row">

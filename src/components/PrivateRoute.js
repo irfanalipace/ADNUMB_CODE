@@ -21,11 +21,11 @@ function PrivateRoute() {
     
         <BrowserRouter>
           <Routes>
-            <Route path="/LoginPage" element={<LoginPage />} exact/>
+            <Route path="/" element={<LoginPage />} exact/>
             <Route path="/RegisterPage" element={<RegisterPage />} />
-            <Route path="/ResetEmail" element={<ResetEmail />} exact/>
+            <Route path="/ResetEmail" element={<ResetEmail />} />
             <Route path="/ForgetEmail" element={<ForgetEmail />} />
-            <Route path="/Dashboard" element={<Dashboard />} exact/>
+            <Route path="/Dashboard" element={<Dashboard />} />
           
           </Routes>
         </BrowserRouter>

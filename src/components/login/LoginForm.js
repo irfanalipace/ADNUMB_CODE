@@ -1,41 +1,66 @@
 
 import "../../styles.css";
-import { Link , useNavigate} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import React,{ useState} from "react";
+import axios from "axios";
+
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
  function LoginForm () {
   const [email, setEmail] = useState("");
-  const [passwordfileds, setPasswordFileds] = useState("");
-  const navigate = useNavigate();
+ 
+ 
+
+const [user, setUser]= useState("");
+// const [password, setPasswordValue] = React.useState("password");
+// const [passwordInput, setPasswordInput] = React.useState("");
 
 
-const [password, setPasswordValue] = React.useState("password");
-const [passwordInput, setPasswordInput] = React.useState("");
-
-const gotoSignUpPage = () => navigate("/Registerpage");
 
 
-const onPasswordChange = (e) => {
-  setPasswordInput(e.target.value);
+// const onPasswordChange = (e) => {
+//   setPasswordInput(e.target.value);
+// };
+// const toggle = () => {
+//   if (password === "password") {
+//     setPasswordValue("text");
+//     return;
+//   }
+//   setPasswordValue("password");
+// };
+
+
+const handleSubmit = async e => {
+  e.preventDefault();
+  const user = { email, password};
+  console.log("userdata",user)
+  // send the username and password to the server
+  const response = await axios.post(
+    "http://xyz/login",
+    user
+  );
+  // set the state of the user
+  setUser(response.data)
+  // store the user in localStorage
+  localStorage.setItem('user', response.data)
+  console.log(response.data)
 };
-const toggle = () => {
-  if (password === "password") {
-    setPasswordValue("text");
-    return;
-  }
-  setPasswordValue("password");
+
+// if (user) {
+//   return <div>{user.name} is loggged in</div>;
+// }
+
+
+const [password, setPassword] = useState('');
+const [showPassword, setShowPassword] = useState(false);
+
+const handlePasswordChange = (e) => {
+  setPassword(e.target.value);
 };
 
-
-const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log({ email, passwordfileds });
-    setPasswordFileds("");
-    setEmail("");
+const handleToggleVisibility = () => {
+  setShowPassword((prevState) => !prevState);
 };
-
-
-
     return (
       
          <div className='background-img-data1'>
@@ -51,7 +76,26 @@ const handleSubmit = (e) => {
 						<input type="email" className="form-control" id="email" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)} required />
 					</div>
           
-                <div className="password-lable text-left">
+
+
+
+                
+          <div className=" text-left">
+               <label> Password</label>
+               <div className='input-group password-login' >
+        <input
+          className='form-control'
+          type={showPassword ? 'text' : 'password'}
+          id="password"
+          value={password}
+          onChange={handlePasswordChange}
+        />
+        <button className="eye-button" onClick={handleToggleVisibility}>
+          {showPassword ? <FaEyeSlash /> : <FaEye />}
+        </button>
+      </div>
+      </div>
+                {/* <div className="password-lable text-left">
                 <label>Password</label>
               
              
@@ -59,7 +103,7 @@ const handleSubmit = (e) => {
               <input
               
               type={password}
-              onChange={(e) => setPasswordFileds(e.target.value)}
+              onChange={(e) => setPasswordValue(e.target.value)}
               value={passwordInput}
               placeholder="*******"
               name="password"
@@ -95,7 +139,7 @@ const handleSubmit = (e) => {
         
             </div>
             
-            </div>
+            </div> */}
 
 
             <div className="text-center_Forget">
@@ -112,7 +156,7 @@ const handleSubmit = (e) => {
             </div>
             <div className="under-text">
             Didn’t have an account?{" "}
-              <span className="link-primary"  onClick={gotoSignUpPage}>
+              <span className="link-primary"  >
               <Link to='/RegisterPage'>Sign up</Link>
               </span>
             </div>

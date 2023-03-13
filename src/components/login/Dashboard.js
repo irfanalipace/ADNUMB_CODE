@@ -167,22 +167,21 @@ const Dashboard = () => {
 
             <div className=' import-file'>
     
-            <div className='inventory-heading' style={{ paddingTop: '8px', paddingBottom: '8px' }}>
-        Upload Inventory file
-      </div>
-      <button className={`w3-btn w3xlarge ${selectedFile ? 'hide-background' : ''}`}>
-        <img style={{ marginLeft: "-17px" }} src={img1} alt='' />
-        {selectedFile && <p style={{marginLeft:'34px'}}>File Name: {selectedFile.name}</p>}
-        <div className='center' style={{ marginLeft: "44px" }}>
-          <input type="file" onChange={handleFileSelect} name="file" className='custom-file-input' />
-        </div>
-        {selectedFile && (
-          <button className="btn btn-success hide-background" style={{ marginTop: '-187px',marginLeft: '189px'}} onClick={handleReset}>
-            Upload Now
-          </button>
-        )}
-      </button>
- 
+              <div className='inventory-heading' style={{ paddingTop: '8px', paddingBottom: '8px' }}>Upload Inventory file</div>
+              <button className={`w3-btn w3xlarge ${selectedFile ? 'hide-background' : ''}`}>
+    <img style={{ marginLeft: "-17px" }} src={img1} alt='' />
+    {selectedFile && <p>Selected file: {selectedFile.name}</p>}
+    <div className='center' style={{ marginLeft: "44px" }}>
+      <input type="file" onChange={handleFileSelect} name="file" className='custom-file-input' />
+      {selectedFile && (
+    <button className=" btn btn-success hide-background" onClick={selectedFile}>
+      Reset
+    </button>
+  )}
+  </div>
+  </button>
+    
+  
   
 
               <div className='download'>

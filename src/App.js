@@ -13,11 +13,11 @@ import Dumy from './components/login/Dumy';
 function App() {
   return (
     <div className="App">
-   {/* <LoginPage />  */}
+   <LoginPage /> 
  
     {/* <ForgetEmail />   */}
   {/* <ResetEmail /> */}
-<Dashboard />
+{/* <Dashboard /> */}
 {/* <Data /> */}
 {/* <UploadFiles /> */}
 

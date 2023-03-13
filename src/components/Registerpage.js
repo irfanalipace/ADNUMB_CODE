@@ -1,13 +1,13 @@
 import React from 'react'
 
 import LoginImage from './login/LoginImage'
-import { Link , useNavigate} from 'react-router-dom';
+
 
 import SiginupForm from './SiginUp/SiginupForm'
 
 export const RegisterPage = () => {
-  const navigate = useNavigate();
-  const gotoSignUpPage = () => navigate("/register");
+ 
+
   
   return (
     <div className="container-fluid">

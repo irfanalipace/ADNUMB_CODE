@@ -31,8 +31,12 @@ old data end*/
 
 
 
-
-
+.inventory-heading-head{
+  text-align: left;
+  padding-top: 14px;
+  padding-left: 14px;
+  padding-bottom: 12px;
+}
 
 
 /* @import './image/Login-img.png'; */
@@ -66,7 +70,73 @@ old data end*/
   margin-bottom: 8px;
 
 }
+.frame1{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 37px 65px;
+gap: 10px;
 
+width: 244px;
+height: 154px;
+
+/* material-theme/white */
+
+background: #FFFFFF;
+border-radius: 12px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.frame2{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 37px 65px;
+gap: 10px;
+
+width: 244px;
+height: 154px;
+
+/* material-theme/white */
+
+background: #FFFFFF;
+border-radius: 12px;
+/* background: url('./image/icon/amazon-logo.png'); */
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.frame3{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 37px 65px;
+gap: 10px;
+
+width: 244px;
+height: 154px;
+
+/* material-theme/white */
+ /* background: url('./image/icon/ali-baba.png');  */
+background: #FFFFFF;
+border-radius: 12px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
 
 .fileds-size{
     width: 80%;
@@ -778,14 +848,18 @@ margin-left: 39px;
   background-color: #006401;
   margin-left: 20px;
 }
-
+.sidebar-inventory{
+  width:inherit;
+}
 .chet-inventoy{
   background-color: #006401;
   width: 200px;
 }
+
 .menu{
   /* margin-left:-44%; */
   /* width: 136%; */
+  
 }
 .menu-text-size{
   font-size:13px
@@ -804,7 +878,12 @@ margin-left: 39px;
     width: 200px;
   
 } */
-
+.orders-logo{
+margin-left: -27px;
+}
+.reight{
+  height: 100%;
+}
 .dataTables_length{
   margin-right: 87%;
     /* margin-top: 14%; */
@@ -814,7 +893,11 @@ margin-left: 39px;
   background-color: #006401;
 }
 
-
+.btn.active:hover {
+  background-color: #006401;
+  width: 100%;
+  border-color: #006401;
+}
 .center{
   width: 30%;
   margin-left: auto;
@@ -826,33 +909,17 @@ margin-left: 39px;
 .link-primary{
   text-decoration: none;
 }
-.custom-file-input {
-  color: transparent;
-    margin-left: -48px;
-}
-.custom-file-input::-webkit-file-upload-button {
-  visibility: hidden;
-}
-.custom-file-input::before {
-  content: 'Upload Master File';
+.btn:hover {
   color: white;
-  display: inline-block;
-/*   background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3); */
-/*   border: 1px solid #999; */
-/*   border-radius: 3px; */
-  padding: 10px 16px;
-  outline: none;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  cursor: pointer;
-/*   text-shadow: 1px 1px #fff; */
-  font-weight: 700;
-  font-size: 10pt;
 }
-/* .custom-file-input:hover::before {
-  border-color: black;
-} */
+
+.btn:hover img {
+  filter: brightness(0) invert(1);
+}
+
+
 .custom-file-input:active {
+  
   outline: 0;
 }
 /* .custom-file-input:active::before {
@@ -875,22 +942,23 @@ margin-left: 39px;
 .icondata{
   margin-left: -40px;
 }
+
 /* 
 /////sidebar css */
 .orders{
-  margin-right: 40%;
+  margin-left: -14px;
 }
 .inventory-menu{
-  margin-right: 38%;
+  margin-left: -10px;
 }
 .conversation{
-  margin-right: 26%;
+  margin-left: -15px;
 }
 .customer{
   margin-right: 36%;
 }
 .setting{
-  margin-right: 50%;
+  margin-left: -11px;
 }
 
 .gift{
@@ -1103,7 +1171,12 @@ margin-left: 39px;
     font-size: 10px;
   }
   }
-
+  @media only screen and (min-width:1200px) and (max-width:1440px) {
+    .copyright-text-email-reset{
+      margin-right: 333px;
+    }
+    
+  }
 @media only screen and (min-width:1100px) and (max-width:1440px) {
   .copyright-text-signup {
     /* margin-bottom: 100% !important; */
@@ -1168,12 +1241,7 @@ margin-right: 0px !important;
     }
     }
 
-@media only screen and (min-width:1200px) and (max-width:1440px) {
-  .copyright-text-email-reset{
-    margin-right: 333px;
-  }
-  
-}
+
 @media only screen and (max-width: 1024px){
 .copyright-text-email-reset {
     margin-right: 112px;
@@ -1201,8 +1269,11 @@ margin-right: 0px !important;
        
       }
       }
-
-     
+      @media only screen and (max-width:965px) {
+      .inventory-heading-head{
+        padding-left: 7 !important;
+      }
+    }
 /* @media only screen and (max-width:1440px) {
   .background-image-img{
     position: fixed;
@@ -1296,11 +1367,6 @@ margin-right: 0px !important;
     }
   }
    
-/* @media only screen and (min-width: 625px){
-  .Auth-form-title {
-     font-size: 23px !important;
-  }
-  } */
 
   
 
@@ -1531,6 +1597,13 @@ margin-right: 0px !important;
       margin-right: 53px;
   }
     }
+    @media only screen and (min-width: 425px){
+      .reight {
+         text-align: '-webkit-center' !important;
+        
+      }
+      }
+    
 
     @media screen and (max-width:425px) {
       .text-left-form {

@@ -21,7 +21,9 @@ const Dashboard = () => {
   //   ["Garrett Winters", "Accountant", "Tokyo"],
   //   ["Ashton Cox", "Junior Technical Author", "San Francisco"]
   // ]
-
+  const handleFileReset = () => {
+    setSelectedFile(null);
+  };
   const [selectedFile, setSelectedFile] = useState(null);
 
   const handleFileSelect = (event) => {
@@ -166,20 +168,23 @@ const Dashboard = () => {
           <div className='content-10'>
 
             <div className=' import-file'>
-    
-              <div className='inventory-heading' style={{ paddingTop: '8px', paddingBottom: '8px' }}>Upload Inventory file</div>
-              <button className={`w3-btn w3xlarge ${selectedFile ? 'hide-background' : ''}`}>
-    <img style={{ marginLeft: "-17px" }} src={img1} alt='' />
-    {selectedFile && <p>Selected file: {selectedFile.name}</p>}
-    <div className='center' style={{ marginLeft: "44px" }}>
-      <input type="file" onChange={handleFileSelect} name="file" className='custom-file-input' />
-      {selectedFile && (
-    <button className=" btn btn-success hide-background" onClick={selectedFile}>
-      Reset
-    </button>
-  )}
+            <div className='inventory-heading' style={{ paddingTop: '8px', paddingBottom: '8px' }}>
+  Upload Inventory file
+</div>
+
+<button className={`w3-btn w3xlarge ${selectedFile ? 'hide-background' : ''}`}>
+  <img style={{ marginLeft: "-17px" }} src={img1} alt='' />
+  {selectedFile && <p>Selected file: {selectedFile.name}</p>}
+  <div className='center' style={{ marginLeft: "44px" }}>
+    <input type="file" onChange={handleFileSelect} name="file" className='custom-file-input' />
+    {selectedFile && (
+      <button className="btn btn-success hide-background" onClick={handleFileReset}>
+        Reset
+      </button>
+    )}
   </div>
-  </button>
+</button>
+
     
   
   

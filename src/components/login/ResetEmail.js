@@ -8,7 +8,8 @@ import img1 from '../../image/99-logo.png'
 const ResetEmail = () => {
   const [password, setPasswordValue] = React.useState("password");
   const [passwordInput, setPasswordInput] = React.useState("");
-
+  const [password2, setPasswordValue2] = React.useState("password");
+  const [passwordInput2, setPasswordInput2] = React.useState("");
 
   const onPasswordChange = (e) => {
     setPasswordInput(e.target.value);
@@ -19,6 +20,17 @@ const ResetEmail = () => {
       return;
     }
     setPasswordValue("password");
+  };
+
+  const onPasswordChange2 = (e) => {
+    setPasswordInput2(e.target.value);
+  };
+  const toggle2 = () => {
+    if (password2 === "password") {
+      setPasswordValue2("text");
+      return;
+    }
+    setPasswordValue2("password");
   };
   return (
     <div className="container-fluid">
@@ -52,7 +64,7 @@ const ResetEmail = () => {
     <div className="col-md-6 col-xl-6 col-sm-12">
     <form className="Auth-form-login">
           <div className="Auth-form-content1">
-            <h4 className="Auth-form-title">Make a new Password</h4>
+            <h4 className="Auth-form-title-reset">Make a new Password</h4>
             
             
             <div className="form-group text-left text-left-email">
@@ -111,16 +123,16 @@ const ResetEmail = () => {
             <div className="input-group form-group-pass"> 
               <input
               
-              type={password}
-              onChange={onPasswordChange}
-              value={passwordInput}
+              type={password2}
+              onChange={onPasswordChange2}
+              value={passwordInput2}
               placeholder="*******"
               name="password"
               className="form-control"
             />
             
-      <button className="eye-button" onClick={toggle}>
-        {password === "password" ? (
+      <button className="eye-button" onClick={toggle2}>
+        {password2 === "password" ? (
           <svg
             width="20"
             height="17"

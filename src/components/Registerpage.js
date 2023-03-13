@@ -1,7 +1,7 @@
 import React from 'react'
 
 import LoginImage from './login/LoginImage'
-
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 import SiginupForm from './SiginUp/SiginupForm'
 

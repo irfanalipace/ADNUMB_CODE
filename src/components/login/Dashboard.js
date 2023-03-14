@@ -12,6 +12,7 @@ import img7 from '../../image/icon/fi-headphone.png';
 import img8 from '../../image/icon/fi-gift.png';
 import img9 from '../../image/icon/fi_chevron.png';
 import img10 from '../../image/icon/Notification.png';
+import img11 from '../../image/icon/bash.png';
 import '../../styles.css'
 
 const Dashboard = () => {
@@ -33,7 +34,11 @@ const Dashboard = () => {
   const handleReset = () => {
     setSelectedFile(null);
   };
+  const [activeButton, setActiveButton] = useState(null);
 
+  const handleButtonClick = (buttonId) => {
+    setActiveButton(buttonId);
+  };
 
   return (
 
@@ -43,57 +48,59 @@ const Dashboard = () => {
         <div className="col-xl-2 col-md-3 col-sm-4">
 
           {/* Sidebar Code is bottom */}
-          <div className="sidebar">
+          <div className="sidebar" >
 
 
-            <button className='btn btn-success'>  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-ui-checks-grid" viewBox="0 0 16 16">
+          {/* <button className='btn btn-success'>  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-ui-checks-grid" viewBox="0 0 16 16">
               <path d="M2 10h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zm9-9h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm0 9a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-3zm0-10a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-3zM2 9a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H2zm7 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2v-3zM0 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.354.854a.5.5 0 1 0-.708-.708L3 3.793l-.646-.647a.5.5 0 1 0-.708.708l1 1a.5.5 0 0 0 .708 0l2-2z" />
             </svg>
               {' '}{' '} Inventroy Formatter
-            </button>
+            </button>  */}
 
 
 
 
             <div className='menu'>
 
-              <ul>
+<ul>
 
-                <a href="#" className="active orde">
-                  <span className="iconda menu-text-size"><img src={img2} alt='' />Orders</span>
+  <a href="#" className='customer-logo' >
+    <span className={`btn ${activeButton === 'button1' ? 'active' : ''}`} onClick={() => handleButtonClick('button1')}><img src={img2} alt='' style={{paddingBottom:'5px'}}/>{' '} Inventory Formatter</span>
 
-                </a>
+  </a>
+  <a href="#" className='customer-logo'>
+    <span className={`btn ${activeButton === 'button2' ? 'active' : ''}`} onClick={() => handleButtonClick('button2')}><img src={img2} alt='' style={{paddingBottom:'5px'}} />{' '} Orders</span>
 
+  </a>
 
-                <a href="#" className='custom'>
-                  <span className="iconda menu-text-size"><img src={img3} alt='' />Customer</span>
+  <a href="#" className='customer-logo'>
+    <span className={`btn ${activeButton === 'button3' ? 'active' : ''}`} onClick={() => handleButtonClick('button3')}><img src={img3} alt='' style={{paddingBottom:'5px'}} />{' '} Customer</span>
 
-                </a>
-
-
-                <a href="#" className='inventory-me'>
-                  <span className="iconda menu-text-size"><img src={img4} alt='' />Inventory</span>
-                  <span className="item menu-text-size"></span>
-                </a>
+  </a>
 
 
-                <a href="#" className='conversati'>
-                  <span className="iconda menu-text-size"><img src={img5} alt='' />conversation</span>
-                  <span className="item menu-text-size"></span>
-                </a>
+  <a href="#" className='inventory-logo'>
+    <span className={`btn ${activeButton === 'button4' ? 'active' : ''}`} onClick={() => handleButtonClick('button4')}><img src={img4} alt='' style={{paddingBottom:'5px'}}/>{' '} Inventory</span>
+   
+  </a>
 
 
-                <a href="#" className='setti'>
-                  <span className="iconda menu-text-size"><img src={img6} alt='' />Setting</span>
-                  <span className="item menu-text-size"></span>
-                </a>
+  <a href="#" className='conversation-logo' style={{borderColor:'white'}}>
+    <span className={`btn ${activeButton === 'button5' ? 'active' : ''}`} onClick={() => handleButtonClick('button5')}><img src={img5} alt='' />{' '} conversation</span>
+   
+  </a>
+
+
+  <a href="#" className='setting-logo'>
+    <span className={`btn ${activeButton === 'button6' ? 'active' : ''}`} onClick={() => handleButtonClick('button6')}><img src={img6} alt='' />{' '} Setting</span>
+   
+  </a>
 
 
 
-              </ul>
+</ul>
 
-            </div>
-
+</div>
 
 
             <button className='btn btn-success headphone' style={{ background: 'rgba(94, 99, 102, 0.1)', 'border-radius': '10px', color: 'black', marginTop: '80%', width: '171px', marginBottom: '12px' }}>
@@ -175,7 +182,7 @@ const Dashboard = () => {
 <button className={`w3-btn w3xlarge ${selectedFile ? 'hide-background' : ''}`}>
   <img style={{ marginLeft: "-17px" }} src={img1} alt='' />
   {selectedFile && <p>Selected file: {selectedFile.name}</p>}
-  <div className='center' style={{ marginLeft: "44px" }}>
+  <div className='center' style={{ marginLeft: "14px" }}>
     <input type="file" onChange={handleFileSelect} name="file" className='custom-file-input' />
     {selectedFile && (
       <button className="btn btn-success hide-background" onClick={handleFileReset}>

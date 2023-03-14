@@ -3,7 +3,8 @@ import "../../styles.css";
 import { Link } from 'react-router-dom';
 import React,{ useState} from "react";
 import axios from "axios";
-
+// import { connect } from 'react-redux';
+// import { login } from '../actions/authActions';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
  function LoginForm () {
@@ -15,7 +16,13 @@ const [user, setUser]= useState("");
 // const [password, setPasswordValue] = React.useState("password");
 // const [passwordInput, setPasswordInput] = React.useState("");
 
+// const [email, setEmail] = useState('');
+// const [password, setPassword] = useState('');
 
+// const handleSubmit = (e) => {
+//   e.preventDefault();
+//   login(email, password);
+// }
 
 
 // const onPasswordChange = (e) => {

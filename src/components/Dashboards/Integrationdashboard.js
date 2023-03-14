@@ -60,47 +60,48 @@ const Integrationdashboard = () => {
 
 
 
-            <div className='menu'>
+         
+<div className='menu'>
 
-              <ul>
+<ul>
 
-                <a href="#" className='customer-logo' >
-                  <span className={`btn ${activeButton === 'button1' ? 'active' : ''}`} onClick={() => handleButtonClick('button1')}><img src={img2} alt='' style={{paddingBottom:'5px'}}/>{' '} inventory </span>
+  <a href="#" className='customer-logo' >
+    <span className={`btn ${activeButton === 'button1' ? 'active' : ''}`} onClick={() => handleButtonClick('button1')}><img src={img2} alt='' style={{paddingBottom:'5px'}}/>{' '} {' '} Inventory Formatter </span>
 
-                </a>
-                <a href="#" className='customer-logo'>
-                  <span className={`btn ${activeButton === 'button2' ? 'active' : ''}`} onClick={() => handleButtonClick('button2')}><img src={img2} alt='' style={{paddingBottom:'5px'}} />{' '} Orders</span>
+  </a>
+  <a href="#" className='customer-logo'>
+    <span className={`btn ${activeButton === 'button2' ? 'active' : ''}`} onClick={() => handleButtonClick('button2')}><img src={img2} alt='' style={{paddingBottom:'5px'}} />{' '} Orders</span>
 
-                </a>
+  </a>
 
-                <a href="#" className='customer-logo'>
-                  <span className={`btn ${activeButton === 'button3' ? 'active' : ''}`} onClick={() => handleButtonClick('button3')}><img src={img3} alt='' style={{paddingBottom:'5px'}} />{' '} Customer</span>
+  <a href="#" className='customer-logo'>
+    <span className={`btn ${activeButton === 'button3' ? 'active' : ''}`} onClick={() => handleButtonClick('button3')}><img src={img3} alt='' style={{paddingBottom:'5px'}} />{' '} Customer</span>
 
-                </a>
-
-
-                <a href="#" className='inventory-logo'>
-                  <span className={`btn ${activeButton === 'button4' ? 'active' : ''}`} onClick={() => handleButtonClick('button4')}><img src={img4} alt='' style={{paddingBottom:'5px'}}/>{' '} Inventory</span>
-                 
-                </a>
+  </a>
 
 
-                <a href="#" className='conversation-logo' style={{borderColor:'white'}}>
-                  <span className={`btn ${activeButton === 'button5' ? 'active' : ''}`} onClick={() => handleButtonClick('button5')}><img src={img5} alt='' />{' '} conversation</span>
-                 
-                </a>
+  <a href="#" className='inventory-logo'>
+    <span className={`btn ${activeButton === 'button4' ? 'active' : ''}`} onClick={() => handleButtonClick('button4')}><img src={img4} alt='' style={{paddingBottom:'5px'}}/>{' '} Inventory</span>
+   
+  </a>
 
 
-                <a href="#" className='setting-logo'>
-                  <span className={`btn ${activeButton === 'button6' ? 'active' : ''}`} onClick={() => handleButtonClick('button6')}><img src={img6} alt='' />{' '} Setting</span>
-                 
-                </a>
+  <a href="#" className='conversation-logo' style={{borderColor:'white'}}>
+    <span className={`btn ${activeButton === 'button5' ? 'active' : ''}`} onClick={() => handleButtonClick('button5')}><img src={img5} alt='' />{' '} conversation</span>
+   
+  </a>
+
+
+  <a href="#" className='setting-logo'>
+    <span className={`btn ${activeButton === 'button6' ? 'active' : ''}`} onClick={() => handleButtonClick('button6')}><img src={img6} alt='' />{' '} Setting</span>
+   
+  </a>
 
 
 
-              </ul>
+</ul>
 
-            </div>
+</div>               
 
 
 

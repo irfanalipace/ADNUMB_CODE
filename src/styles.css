@@ -27,10 +27,6 @@ old data end*/
 
 
 
-
-
-
-
 .inventory-heading-head{
   text-align: left;
   padding-top: 14px;
@@ -868,8 +864,7 @@ margin-left: 39px;
 }
 
 .menu{
-  /* margin-left:-44%; */
-  /* width: 136%; */
+  padding-top: 79px;
   
 }
 .menu-text-size{
@@ -905,14 +900,21 @@ margin-left: -27px;
 }
 
 .btn.active:hover {
-  background-color: #006401;
   width: 100%;
-  border-color: #006401;
+  color: white;
+}
+span.btn.active {
+  background-color: #006401 !important;
+  border-color: #006401 !important;
+  color: white !important;
+}
+span.btn.active img {
+  filter: brightness(0) invert(1) !important;
 }
 .center{
   width: 30%;
-  margin-left: auto;
-  margin-right: auto;
+
+  
   color: white;
   
   border: aliceblue;
@@ -921,17 +923,38 @@ margin-left: -27px;
   text-decoration: none;
 }
 .btn:hover {
-  color: white;
+  color: black !important;
 }
 
 .btn:hover img {
-  filter: brightness(0) invert(1);
+  filter: brightness(0) invert(0) !important;
 }
 
 
 .custom-file-input:active {
   
-  outline: 0;
+ 
+}.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Upolad Master File';
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #7BBB6C;
+  /* border-radius: 3px; */
+ 
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  
+ 
+}
+.custom-file-input:hover::before {
+  border-color: #7BBB6C;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
 }
 /* .custom-file-input:active::before {
   background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
@@ -1059,7 +1082,7 @@ margin-left: -27px;
 }
 
   .sidebar {
-    margin-top: 6%;
+   
     /* height: 100%; */
     /* width:17%;
     position: fixed; */
@@ -1068,14 +1091,14 @@ margin-left: -27px;
     left: 0;
     background-color: white;
     overflow-x: hidden;
-    padding-top: 16px;
+   margin-left:-26px !important;
     
  
   }
   
   /* Style sidebar links */
   .sidebar a {
-    padding: 6px 8px 6px 16px;
+   margin-top: 13px;
     text-decoration: none;
     font-size: 20px;
     color: #818181;

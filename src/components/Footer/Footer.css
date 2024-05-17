@@ -64,6 +64,13 @@ footer .footer-menu-items ul li a {
 .footer-menu-items-dev-data li{
 list-style-type: none;
 }
+.social-media-icons-data {
+    position: absolute;
+    right: 0px;
+    top: 50c;
+    margin-top: -144px;
+    width: 207px;
+}
 @media screen and (max-width:600px) {
     .footer-website-data {
         position: relative;

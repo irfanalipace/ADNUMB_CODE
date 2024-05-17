@@ -300,9 +300,9 @@ const Home = () => {
           <div className='footer-menu-items-dev-data d-flex justify-content-end align-items-center footer-menu-items-list-media flex-dirctions social-media-icons-data flex-dirctions'>
               
           <ul className="footer-menu-items-dev-data d-flex m-0 p-0" style={{flexDirection:'column'}}>
-  
-            <li><a href="#"><FontAwesomeIcon icon={faFacebookMessenger} size="lg" style={{color:"#0078FF"}}/></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faWhatsapp} size="lg" style={{ color: '#25D366' }} /></a></li>
+          <li><a href="#"><FontAwesomeIcon icon={faWhatsapp} size="lg" style={{ color: '#25D366',fontSize:'40px' }} /></a></li>
+            <li><a href="#"><FontAwesomeIcon icon={faFacebookMessenger} size="lg" style={{color:"#0078FF", fontSize:'40px'}}/></a></li>
+          
           
           </ul>
          
